@@ -4,17 +4,35 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>sk.cde.training</groupId>
-    <artifactId>maven-training-web</artifactId>
+    <artifactId>maven-web-0923</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <packaging>war</packaging>
+
+    <parent>
+        <groupId>sk.cde.training0923</groupId>
+        <artifactId>maven-parent-0923</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
     <properties>
         <maven.compiler.source>18</maven.compiler.source>
         <maven.compiler.target>18</maven.compiler.target>
         <java.version>18</java.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.12</version>
+        </dependency>
+        <dependency>
+            <groupId>sk.cde.training0923</groupId>
+            <artifactId>maven-java-0923</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
