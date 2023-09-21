@@ -58,7 +58,7 @@
                             <resources>
                                 <resource>
                                     <directory>${basedir}/src/main/resources/</directory>
-                                    <filtering>true</filtering>
+                                    <fileNameFiltering>true</fileNameFiltering>
                                 </resource>
                             </resources>
                         </configuration>
