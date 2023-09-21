@@ -39,4 +39,37 @@
             <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>check-my-classes</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireFilesExist>
+                                    <files>
+                                        <file>${project.build.outputDirectory}\HelloWorld.class</file>
+<!--                                        <file>${basedir}\target\classes\HelloWorld.class</file>-->
+                                    </files>
+                                </requireFilesExist>
+                            </rules>
+                            <fail>true</fail>
+                        </configuration>
+                    </execution>
+                    <!--                        <execution>...</execution>-->
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+<!--    <reporting>-->
+<!--    </reporting>-->
 </project>
