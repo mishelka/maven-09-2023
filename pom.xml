@@ -70,8 +70,8 @@
                                 </excludes>
                             </bannedDependencies>
                         </rules>
-                        <fail>${vlastna}</fail>
-                        <skip>${skipEnforcer}</skip>
+                        <fail>true</fail>
+                        <skip>${enforcerSkipCommonsLogging}</skip>
                     </configuration>
                     <executions>
                         <execution>
