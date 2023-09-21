@@ -36,6 +36,7 @@
                 <enforcer.skip>true</enforcer.skip>
             </properties>
         </profile>
+<!-- not a very good solution - need to switch two profiles to switch to continuous: -->
 <!--        <profile>-->
 <!--            <id>continuous-mode</id>-->
 <!--            <activation>-->
