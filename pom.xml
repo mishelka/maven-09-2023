@@ -25,6 +25,29 @@
         <enforcerSkipHelloWorld>${enforcer.skip}</enforcerSkipHelloWorld>
     </properties>
 
+    <profiles>
+        <profile>
+            <id>developmentMode</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+
+            <properties>
+                <enforcer.skip>true</enforcer.skip>
+            </properties>
+        </profile>
+<!--        <profile>-->
+<!--            <id>continuous-mode</id>-->
+<!--            <activation>-->
+<!--                <activeByDefault>false</activeByDefault>-->
+<!--            </activation>-->
+
+<!--            <properties>-->
+<!--                <enforcer.skip>true</enforcer.skip>-->
+<!--            </properties>-->
+<!--        </profile>-->
+    </profiles>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
